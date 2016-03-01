@@ -1,2 +1,3 @@
 # PokemonCardGame
-PokemonCardGame readme
+Costam sobie pisze blah blah blah
+
