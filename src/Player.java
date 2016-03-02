@@ -9,12 +9,17 @@ public class Player {
 		
 	}
 	
-	public String setPName(){
+	public void setPName(){
 		System.out.println("Please input player name: ");
 		Scanner scan = new Scanner(System.in);
 		String name = scan.nextLine();
-		return name;
+		pName = name;
 	}
+	
+	public String getPName(){
+		return pName;
+	}
+	
 	
 	
 }
