@@ -16,7 +16,7 @@ public class Game {
 		//Scanner scan2 = new Scanner(System.in);
 		//String deck = scan2.nextLine().toLowerCase();
 	
-		Deck startDeck = new Deck();
+		Cards startDeck = new Cards();
 		startDeck.setStartDeck();
 		
 

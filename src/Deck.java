@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class Deck {
 
@@ -7,11 +7,11 @@ public class Deck {
 		
 	}
 		
-	Deck[] FlameOn = new Deck[29];	
+	Deck[] FlameOn = new Deck[29];
 	Deck[] GreenPower = new Deck[29];
 	Deck[] Tsunami = new Deck[29];
 	
-	public Deck[] setStartDeck(){
+	public Cards[] setStartDeck(){
 		System.out.println("Choose your starting deck of cards! \n"
 				+ "Will it be the extreemly hot 'FlameOn' deck? \n"
 				+ "Or maybe you would preffer something more down-to-earth with the 'GreenPower' deck? \n"
@@ -48,3 +48,4 @@ public class Deck {
 	}
 	
 }
+*/
