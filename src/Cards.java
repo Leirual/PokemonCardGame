@@ -1,23 +1,27 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Cards {
 	
 	private String name;
 	private String type;
-	private String typeCost;
-	private int cost;
+
 	
 	
 	public Cards(){
 		
 	}
 	
-	public Cards(String name, String type, String typeCost, int cost){
+	public Cards(String name, String type){
 		this.name = name;
 		this.type = type;
-		this.typeCost = typeCost;
-		this.cost = cost;
 	}
+	
+	
+	Cards[] FlameOn = new Cards[3];
+	Cards[] GreenPower = new Cards[3];
+	Cards[] Tsunami = new Cards[3];
+	Cards[] StartDeck = new Cards[3];
 	
 	
 	public String getName(){
@@ -26,58 +30,28 @@ public class Cards {
 	public String getType(){
 		return type;
 	}
-	public String getTypeCost(){
-		return typeCost;
+	
+	public void setName(String name){
+		this.name = name;
 	}
-	public int getCost(){
-		return cost;
+	public void setType(String type){
+		this.type = type;
 	}
 	
+	/*public String PritnTab(Cards[]){
+		for(int x=0, x<29, x++){
+			System.out.println(StartDeck[x]);
+			
+		}*/
 	
-	
-	
-	
-	public Cards[] startDeck;	
+	public String toString(){
+		String str = "Name: " + name + " Type: " + type;
+		System.out.println(str);
+		return str;
+	}
 		
-	Cards[] FlameOn = new Cards[29];
-	Cards[] GreenPower = new Cards[29];
-	Cards[] Tsunami = new Cards[29];
-	
-	public Cards[] setStartDeck(){
-		System.out.println("Choose your starting deck of cards! \n"
-				+ "Will it be the extreemly hot 'FlameOn' deck? \n"
-				+ "Or maybe you would preffer something more down-to-earth with the 'GreenPower' deck? \n"
-				+ "No? Than perhaps you're not afraid to get wet with the 'Tsunami' deck?");
-		boolean x;
-		do{
-			Scanner scan = new Scanner(System.in);
-			String deck = scan.nextLine().toLowerCase();
-			switch (deck){
-			case "flameon":
-				System.out.println("FlameOn it is!");
-				FlameOn = new Cards[29];
-				x=false;
-				break;
-			case "greenpower":
-				System.out.println("GreenPower it is!");
-				GreenPower = new Cards[29];
-				x=false;
-				break;
-			case "tsunami":
-				System.out.println("Tsunami it is!");
-				Tsunami = new Cards[29];
-				x=false;
-				break;
-			default:
-				System.out.println("Wrong deck name. Please Write again.");
-				x=true;
-				break;
-			}			
-		}
-		while (x = true);
-		
-		return startDeck;
-	}
+
+
 	
 	
 	
