@@ -5,6 +5,9 @@ public class Game {
 
 	public static void main(String[] args) {
 
+		StartDecks deczek = new StartDecks();
+		deczek.setFlameOn();
+		
 		System.out.println("Welcome to Pokemon - The Card Game!");
 				
 		Player player = new Player();
@@ -16,9 +19,6 @@ public class Game {
 		starterDeck.setStartDeck();
 		
 		System.out.println("This deck contains: ");
-		for(int x=0; x<starterDeck.length; x++){
-			
-		}
 		starterDeck.toString();		
 
 	/*	System.out.println(Arrays.toString(starterDeck));
