@@ -17,7 +17,7 @@ public class Deck extends Cards {
 	Cards[] StartDeck = new Cards[3];*/
 	
 
-	public boolean x;
+/*	public boolean x;
 	public Deck[] setStartDeck(){
 		System.out.println("Choose your starting deck of cards! \n"
 				+ "Will it be the extreemly hot 'FlameOn' deck? \n"
@@ -59,6 +59,6 @@ public class Deck extends Cards {
 		}while (x=false);
 		
 		return starterDeck;
-	}
+	}*/
 	
 }
