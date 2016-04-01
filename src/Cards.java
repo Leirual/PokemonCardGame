@@ -5,23 +5,23 @@ public class Cards {
 	
 	private String name;
 	private String type;
+	private int retreatCost;
+	private Skill skill;
 
-	
 	
 	public Cards(){
 		
 	}
-	
 	public Cards(String name, String type){
 		this.name = name;
 		this.type = type;
 	}
-	
-	
-	Cards[] FlameOn = new Cards[3];
-	Cards[] GreenPower = new Cards[3];
-	Cards[] Tsunami = new Cards[3];
-	Cards[] StartDeck = new Cards[3];
+	public Cards(String name, String type, int retreatCost, Skill skill){
+		this.name = name;
+		this.type = type;
+		this.retreatCost = retreatCost;
+		this.skill = skill;
+	}
 	
 	
 	public String getName(){
@@ -38,22 +38,27 @@ public class Cards {
 		this.type = type;
 	}
 	
-	/*public String PritnTab(Cards[]){
-		for(int x=0, x<29, x++){
-			System.out.println(StartDeck[x]);
-			
-		}*/
+	public int getRetreatCost() {
+		return retreatCost;
+	}
+	public void setRetreatCost(int retreatCost) {
+		this.retreatCost = retreatCost;
+	}
+
+	public Skill getSkill() {
+		return skill;
+	}
+	public void setSkill(Skill skill) {
+		this.skill = skill;
+	}
 	
+	// metoda do wypisywania kart - nazwa i typ
 	public String toString(){
 		String str = "Name: " + name + " Type: " + type;
 		System.out.println(str);
 		return str;
 	}
 		
-
-
-	
-	
 	
 
 }
